@@ -1,0 +1,15 @@
+/// <reference types="vite/client" />
+
+interface ImportMetaEnv {
+  readonly VITE_SUPABASE_URL?: string
+  readonly VITE_SUPABASE_ANON_KEY?: string
+  readonly VITE_N8N_PLANNER_WEBHOOK?: string
+  readonly VITE_N8N_PLANNER_TEST_WEBHOOK?: string
+  readonly VITE_N8N_SLACK_WEBHOOK?: string
+  readonly VITE_GOOGLE_MAPS_API_KEY?: string
+  readonly VITE_USE_MOCKS?: string
+}
+
+interface ImportMeta {
+  readonly env: ImportMetaEnv
+}
